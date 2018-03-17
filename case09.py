@@ -32,4 +32,4 @@ with open('results.html', 'w') as file:
 
 import webbrowser
 new = 2
-webbrowser.open('results.html', new=new)
+webbrowser.open('case09.html', new=new)

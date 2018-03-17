@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "case16/case16.py", line 21, in <module>
+    myElem.send_keys("haha")
+  File "/usr/local/lib/python2.7/dist-packages/selenium/webdriver/remote/webelement.py", line 479, in send_keys
+    'value': keys_to_typing(value)})
+  File "/usr/local/lib/python2.7/dist-packages/selenium/webdriver/remote/webelement.py", line 628, in _execute
+    return self._parent.execute(command, params)
+  File "/usr/local/lib/python2.7/dist-packages/selenium/webdriver/remote/webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "/usr/local/lib/python2.7/dist-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidArgumentException: Message: Expected [object Undefined] undefined to be a string
+
