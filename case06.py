@@ -14,7 +14,7 @@ tmp_url = "/tmp/tmp.html"
 tmp_file = open(tmp_url, "w")
 for cookie in cookie_jar:
     if cookie.name == "Flag":
-        tmp_file.write(cookie.value)
+        tmp_file.write("<script>alert(\"" + cookie.value + "\")</script>")
 tmp_file.close()
 
 webbrowser.open("file://" + os.path.realpath(tmp_url))
