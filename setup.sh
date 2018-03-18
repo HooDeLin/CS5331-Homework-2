@@ -2,7 +2,7 @@
 
 # set the script to exit on any failure
 set -e
-
+mkdir -p logs/
 sudo apt-get update -y
 sudo apt-get install python-pip -y
 sudo apt-get install chromium-browser -y
